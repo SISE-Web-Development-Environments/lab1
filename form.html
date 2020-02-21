@@ -1,0 +1,111 @@
+<HTML>
+
+<!-- Fig. 4.8: form.html   -->
+<!-- Form Design Example 3 -->
+
+<HEAD>
+<TITLE>Form Example</TITLE>
+</HEAD>
+<a href="MiscForms.html" target="_blank">Additional References About Forms</a>
+<BODY>
+<H2>Feedback Form</H2>
+
+<P>Please fill out this form to help us improve our site.</P>
+
+<FORM METHOD = "POST" ACTION = "/cgi-bin/formmail">
+
+<INPUT TYPE = "hidden" NAME = "recipient"
+   VALUE = "deitel@deitel.com">
+<INPUT TYPE = "hidden" NAME = "subject" 
+   VALUE = "Feedback Form">
+<INPUT TYPE = "hidden" NAME = "redirect" 
+   VALUE = "main.html"> 
+
+<P><STRONG>Name: </STRONG>
+<INPUT NAME = "name" TYPE = "text" SIZE = "25"></P>
+
+<P><STRONG>Comments:</STRONG> 
+<TEXTAREA NAME = "comments" ROWS = "4" COLS = "36"></TEXTAREA>
+</P>
+
+<P><STRONG>Password:</STRONG> 
+<INPUT NAME = "password" TYPE = "password" SIZE = "25"></P>
+
+<P><STRONG>Things you liked:</STRONG><BR>
+
+Site design 
+<INPUT NAME = "things" TYPE = "checkbox" VALUE = "Design">
+Links 
+<INPUT NAME = "things" TYPE = "checkbox" VALUE = "Links">
+Ease of use 
+<INPUT NAME = "things" TYPE = "checkbox" VALUE = "Ease">
+Images 
+<INPUT NAME = "things" TYPE = "checkbox" VALUE = "Images">
+Source code 
+<INPUT NAME = "things" TYPE = "checkbox" VALUE = "Code">
+</P>
+
+<!-- <INPUT TYPE="radio"> creates a radio button. The     -->
+<!-- difference between radio buttons and checkboxes is   -->
+<!-- that only one radio button in a group can be selected -->
+<P><STRONG>How did you get to our site?:</STRONG><BR>
+
+Search engine 
+<INPUT NAME = "how get to site" TYPE = "radio"
+   VALUE = "search engine" CHECKED>
+Links from another site 
+<INPUT NAME = "how get to site" TYPE = "radio" 
+   VALUE = "link">
+Deitel.com Web site 
+<INPUT NAME = "how get to site" TYPE = "radio" 
+   VALUE = "deitel.com">
+Reference in a book 
+<INPUT NAME = "how get to site" TYPE = "radio" 
+   VALUE = "book">
+Other 
+<INPUT NAME = "how get to site" TYPE = "radio" 
+   VALUE = "other">
+</P>
+
+<!-- The <select> tag presents a drop down menu with -->
+<!-- choices indicated by the <option> tags          -->
+<P><STRONG>Rate our site (1-10):</STRONG> 
+<SELECT NAME = "rating">
+<OPTION SELECTED>Amazing:-)
+<OPTION>10
+<OPTION>9
+<OPTION>8
+<OPTION>7
+<OPTION>6
+<OPTION>5
+<OPTION>4
+<OPTION>3
+<OPTION>2
+<OPTION>1
+<OPTION>The Pits:-(
+</SELECT></P>
+
+<INPUT TYPE = "submit" VALUE = "Submit Your Entries"> 
+<INPUT TYPE = "reset" VALUE = "Clear Your Entries">
+</FORM>
+
+</BODY>
+</HTML>
+
+
+<!-- 
+ ************************************************************************** 
+ * (C) Copyright 1999 by Deitel & Associates, Inc. and Prentice Hall.     *
+ * All Rights Reserved.                                                   *
+ *                                                                        *
+ * DISCLAIMER: The authors and publisher of this book have used their     *
+ * best efforts in preparing the book. These efforts include the          *
+ * development, research, and testing of the theories and programs        *
+ * to determine their effectiveness. The authors and publisher make       *
+ * no warranty of any kind, expressed or implied, with regard to these    *
+ * programs or to the documentation contained in these books. The authors *
+ * and publisher shall not be liable in any event for incidental or       *
+ * consequential damages in connection with, or arising out of, the       *
+ * furnishing, performance, or use of these programs.                     *
+ **************************************************************************
+-->
